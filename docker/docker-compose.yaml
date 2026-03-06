@@ -1,8 +1,9 @@
 services:
   starlinkstatus:
+    image: hubbos:5000/starlinkstatus:1.3a
     build:
       context: .
     restart: always
     environment:
       - APIKEY=YOURAPIKEY
-      - INTERVAL=900
+      - INTERVAL=3600
